@@ -1,8 +1,8 @@
-# zod-persist 🛡️
+# react-zod-saver 🛡️
 
 A **type-safe LocalStorage manager for React** powered by **Zod**.
 
-`zod-persist` provides a simple React hook that works like `useState`, but automatically
+`react-zod-saver` provides a simple React hook that works like `useState`, but automatically
 syncs with `localStorage`, validates data using Zod schemas, synchronizes across browser
 tabs, and safely migrates stored data when your app evolves.
 
@@ -22,7 +22,7 @@ Managing `localStorage` in React often involves:
 
 ### 💡 The Idea
 
-`zod-persist` is a **hook-based storage library** that keeps React state and browser storage
+`react-zod-saver` is a **hook-based storage library** that keeps React state and browser storage
 in sync **with full schema validation**.
 
 You define:
@@ -51,7 +51,7 @@ The library guarantees:
 ## 📦 Installation
 
 ```bash
-npm install zod-persist zod
+npm install react-zod-saver zod
 
 ```
 ## ⚡ Quick Start
@@ -60,7 +60,7 @@ The `useSafeStorage` hook works just like `useState`, but with storage + validat
 
 ```ts
 import { z } from 'zod';
-import { useSafeStorage } from 'zod-persist';
+import { useSafeStorage } from 'react-zod-saver';
 
 const UserSchema = z.object({
   name: z.string(),
