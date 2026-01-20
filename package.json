@@ -1,0 +1,42 @@
+{
+  "name": "react-zod-saver",
+  "version": "1.0.1",
+  "description": "Type-safe localStorage for React with Zod validation and migrations",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emadaaltiti/react-zod-saver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emadaaltiti/react-zod-saver/issues"
+  },
+  "homepage": "https://github.com/emadaaltiti/react-zod-saver#readme",
+  "scripts": {
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
+    "build": "tsup src/index.ts --format cjs,esm --minify --clean --dts",
+    "lint": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "zod": ">=3"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^18.2.0",
+    "jsdom": "^27.4.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.17",
+    "zod": "^3.0.0"
+  }
+}
