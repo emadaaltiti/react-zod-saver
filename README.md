@@ -60,7 +60,7 @@ The `useSafeStorage` hook works just like `useState`, but with storage + validat
 
 ```ts
 import { z } from 'zod';
-import { useSafeStorage } from 'zod-persist';
+import { useSafeStorage } from 'react-zod-saver';
 
 const UserSchema = z.object({
   name: z.string(),
